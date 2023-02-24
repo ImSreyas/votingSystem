@@ -1,0 +1,109 @@
+body{
+	background-color: white;
+}
+.page-head{
+
+}
+/*Styling the form*/
+
+form{
+	background-color: ;
+}
+.link{
+	font-style: italic;
+}
+.link a:hover{
+	color: green;
+}
+.form-panel{
+	background-color:;
+	width: 350px;
+	margin-left:auto;
+	margin-right: auto; 
+}
+.form-heading{
+	font-weight: bold;
+	background-color:#449d44; 
+	font-size: 20px;
+	color: white;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+.reg-btn-sbt{
+	padding-bottom: 10px;
+
+}
+.form-field{
+}
+label{
+	color: green;
+	font-style: italic;
+	font-weight: bold;
+}
+button{
+	font-size: larger;
+	background-color: ;
+	cursor: pointer;
+	height: 40px;
+	border-style: solid;
+	border-color: darkgreen;
+	border-width: thin;
+	border-radius: 5px;
+
+}
+button:hover{
+	background-color: green;
+	color: white;
+}
+select{
+	width: 50%;
+	background-color: whitesmoke;
+	color: green;
+
+}
+input:hover, select:hover{
+	background-color: transparent;
+}
+.footer{
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+	background-color: rgba(0, 100, 0, 1);
+	font-size: large;
+}
+a{
+	text-decoration: none;
+}
+.footer a:hover{
+	color: white;
+	text-decoration: underline;
+}
+a:visited{
+	color: black;
+}
+a:hover{
+	cursor: pointer;
+}
+
+/*Dropdown menue*/
+nav{
+	padding-top: 10px;
+	margin-left:auto;
+	margin-right: auto; 
+}
+nav ul li{
+	display: inline-block;
+	padding: 0px 20px 10px 20px;
+	list-style: none;
+
+}
+nav ul li a:hover{
+	color: white;
+	text-decoration: none;
+
+}
+nav ul li a{
+	color: black;
+}
+/*Dropdown End*/

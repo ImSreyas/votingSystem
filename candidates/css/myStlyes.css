@@ -1,0 +1,184 @@
+body{
+	/*background-image: url(../img/1.jpg);*/
+	background-color: white;
+	background-size: 100%;
+}
+.page-head{
+}
+#wrapper{
+	padding-bottom:20px; 
+}
+
+.container{
+	margin-top: 50px;
+}
+/*Styling the form*/
+
+.index-form{
+	border-style: solid;
+	border-width: thin;
+	border-radius: 5px;
+
+}
+.form-panel{
+	background-image:;
+	width: 350px;
+	margin-left:auto;
+	margin-right: auto; 
+	border-radius: 10px;
+	padding-right:;
+}
+.form-heading{
+	font-weight: bold;
+	background-color:#449d44; 
+	font-size: 20px;
+	color: white;
+
+
+}
+input{
+	background-color: transparent;
+	font-size: 18px;
+	padding-left: 5px;
+	border-width: thin;
+	border-style: solid;
+}
+label{
+	font-style: italic;
+	font-size: large;
+	font-weight: bold;
+}
+
+
+input:hover{
+	
+}
+footer{
+    color: white;
+	text-align: center;
+	padding-bottom: 20px;
+	background-color: rgba(0, 100, 0, 1);
+	font-size: large;
+}
+.footer a:hover{
+	color: white;
+	text-decoration: underline;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:visited{
+     color: black;
+}
+.panel-nav{
+	width: 700px;
+	margin-top: -10px;
+	margin-left:auto;
+	margin-right: auto; 
+}
+.panel-nav a:hover{
+	border-bottom: solid;
+	border-top: solid;
+}
+.panel-nav{
+	font-size: 16px;
+}
+.link{
+	font-style: italic;
+}
+
+.link a:hover{
+	color: brown;
+
+}
+/* For the vote page*/
+#right-logo{
+	margin-right: 60px;
+}
+#left-logo{
+	margin-left: 60px;
+}
+.panel-body{
+	padding: 20px;
+
+}
+.panel-heading{
+	background-color: #0022ff !important; 
+	font-size: 20px;
+	color: white;
+}
+.page-heading{
+
+} 
+.col-lg-6{
+	max-width: 98%;
+
+ }
+ .img{
+ 	border-style: solid;
+ 	border-width: thin;
+
+ }
+
+ /*Tables*/
+ .thead{
+ 	background-color: rgba(0, 100, 0, 1);
+ 	color: white;
+ }
+ table{
+ 	width: 80%;
+ 	border-collapse: collapse;
+ }
+ .img-rounded {
+    border-radius: 100px;
+}
+
+ table td{
+ 	text-align: center;
+ }
+  tbody tr:hover{
+ 	background-color: rgba(198, 231, 198, 1);
+ 	cursor: pointer;
+ }
+ .dataTables_length {
+    padding-left: 150px;
+}
+
+ /*next & previous*/
+.pagination li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+
+}
+/*records search input*/
+label{
+	float: left;
+	padding:  0px 10px 10px 0px;
+}
+/*nav-menue*/
+nav{
+	padding-top: 10px;
+	margin-left:auto;
+	margin-right: auto; 
+}
+nav ul li{
+	display: inline-block;
+	padding: 0px 20px 10px 20px;
+	list-style: none;
+
+}
+nav ul li a:hover{
+	color: white;
+	text-decoration: none;
+
+}
+nav ul li a{
+	color: black;
+}
+/*Dropdown End*/
+select{
+	color: green;
+}
+

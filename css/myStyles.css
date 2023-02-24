@@ -1,0 +1,208 @@
+body{
+	/*background-image: url(../img/img1.jpg);*/
+	background-color: white;
+	background-size: 100%;
+	color: green;
+}
+.page-head{
+}
+#wrapper{
+	background-color: white;
+	padding-bottom: 20px;
+}
+#banner-img{
+}
+.container{
+	margin-top: 50px;
+}
+/*Styling the form*/
+form label{
+	margin-bottom: 0px;
+	font-weight: normal;
+	padding-left: 5px;
+}
+.form-control{
+}
+form .btn-block{
+	width: 70%;
+	margin: auto auto;
+
+}
+
+.index-form{
+	margin: auto auto;
+
+}
+.form-panel{
+	margin-left:auto;
+	margin-right: auto; 
+	border-radius: 10px;
+	margin-top: -140px;
+}
+.form-heading{
+	font-weight: bold;
+	background-color:#449d44; 
+	font-size: 20px;
+	color: white;	
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+
+}
+form input{
+	font-size: 15px;
+}
+.form-field{
+}
+.form-field input{
+
+}
+label{
+	font-style: italic;
+	font-size: large;
+	color: green;
+}
+button{
+	font-size: larger;
+	background-color: ;
+	cursor: pointer;
+	height: 40px;
+	border-style: solid;
+	border-color: darkgreen;
+	border-width: thin;
+	border-radius: 5px;
+
+}
+button:hover{
+	background-color: green;
+	color: white;
+}
+
+input:hover{
+	
+}
+footer{
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+	background-color: rgba(0, 100, 0, 1);
+	font-size: large;
+}
+.footer a:hover{
+	color: white;
+	text-decoration: underline;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:visited{
+     color: black;
+
+
+
+}
+/*Dropdown End*/
+
+.link{
+	font-style: italic;
+}
+
+.link a:hover{
+	color: brown;
+}
+.btn button{
+	width: 500px;
+}
+/* For the vote page*/
+#right-logo{
+	margin-right: 60px;
+}
+#left-logo{
+	margin-left: 60px;
+}
+.panel-body{
+	padding: 20px;
+
+}
+
+.panel-heading{
+	background-color: rgba(0, 0, 0, 1);
+	font-size: large;
+	color: white;
+}
+.page-heading{
+
+} 
+.col-lg-6{
+	max-width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ballot-submit-button{
+	margin-top: 10px;
+	margin-bottom: 50px;
+	opacity: 0.8;
+}
+.ballot-submit-button button{
+	width: 200px;
+
+}
+
+ /*The voter_result.php page*/
+ .final-ballot-text p{
+        font-size: 24px;
+
+ }
+ #position{
+ 	padding-left: 15px;
+ 	padding-top: 15px;
+ }
+ #position:hover{
+ 	background-color: rgba(196, 196, 196, 1);
+ }
+ .img{
+ 	border-style: solid;
+ 	border-width: thin;
+
+ }
+ .navbar-brand{
+
+ }
+  /*for voters page*/
+
+ /*next & previous*/
+.pagination li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+
+}
+
+/*records search input*/
+label{
+	float: left;
+	padding:  0px 10px 10px 0px;
+}
+select{
+	color: green;
+}
+nav{
+	padding-top: 10px;
+	margin-left:auto;
+	margin-right: auto; 
+}
+nav ul li{
+	display: inline-block;
+	padding: 0px 20px 10px 20px;
+	list-style: none;
+
+}
+nav ul li a:hover{
+	color: white;
+	text-decoration: none;
+
+}
+nav ul li a{
+	color: black;
+}
