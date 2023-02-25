@@ -55,6 +55,11 @@ nav a:hover{
 .first-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: url('../img/blob-haikei (2).svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vw * 6 / 16);
 }
 .first-container div{
     transform: translateY(1rem);
@@ -79,32 +84,34 @@ nav a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    --ip: 2rem;
+    --ip: 3rem;
     padding: var(--ip);
-    transform: translate(calc(var(--ip) * 1.2), -4rem);
+    transform: translate(calc(var(--ip) * 1.2), 0);
 }
 
 
 .second-container{
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    height: calc(100vw * 7 / 19);
 }
 .second-image-container{
     width: 100%;
-    height: 75vh;
-    border-radius: 2rem;
-    overflow: hidden;
+    height: 100%;
+    /* overflow: hidden; */
 }
 .second-image{
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    --ip: 8rem;
-    padding: var(--ip);
-    transform: translateX(calc(var(--ip) * -.5));
+    object-fit: contain;
+    --ip: 3rem;
+    transform: translate(calc(var(--ip) * -1.2), 0);
 }
 .ex-text{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,9 +122,13 @@ nav a:hover{
     line-height: normal;
 }
 h{
+    width: fit-content;
     font-size: 3rem;
     font-weight: 700;
-    padding-block-end: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--color2);
+    border-radius: 1rem;
+    margin-block-end: 1rem;
 }
 
 footer{
