@@ -17,21 +17,16 @@
                          <form method = "post" enctype = "multipart/form-data">
                          	
                                 <div class="form-heading">
-                         		<center>Voter Registration</center>
+                         		<center>User Registration</center>
                          		</div>
 											<div class="form-field">
-												<label>Student ID</label><br/>
-												<input class ="form-control" type = "text" name = "id_number" placeholder = "Student ID" required="true">
-													
+												<label>User name</label><br/>
+												<input class ="form-control" type = "text" name = "username" placeholder = "user name" required="true">
 											</div>
 											
 											<div class="form-field">											
 												<label>Password</label><br/>
 													<input class="form-control"  type = "password" name = "password" id = "pass" placeholder="Password" required="true"/>
-											</div>
-											<div class="form-field">											
-												<label>Retyp Password</label><br/>
-													<input class="form-control"  type = "password" name = "password1" id = "pass" placeholder="Retyp Password" required="true"/>
 											</div>
 
 											<div class="form-field">
@@ -43,35 +38,21 @@
 												<label>Last Name</label><br/>
 													<input class="form-control"  type = "text" name = "lastname" placeholder="Last Name" required="true">
 											</div>
-
-											<div class="form-field">
-												<label>Gender</label> <br/>
-													<select class = "form-control" name = "gender">
-														<option >Male</option>
-														<option >Female</option>														
-													</select>
-											</div>
 											
 											<div class="form-field">
-												<label>Program of Study <i>(enter initials only i.e LLB,BFIN, BIT..)</i></label><br/>
-													<input class="form-control"  type = "text" name = "prog_study" placeholder="E.g BIT, LLB,BFIN, BITED" required="true">
+												<label>Phone number</label><br/>
+													<input class="form-control"  type = "phone" name = "phonenumber" placeholder="phone number" required="true">
+											</div>
+                                            <div class="form-field">
+												<label>Email</label><br/>
+													<input class="form-control"  type = "text" name = "email" placeholder="email" required="true">
 											</div>
 
-											<div class="form-field">
-												<label>Select Study Level</label> <br/>
-													<select class = "form-control" name = "year_level">
-														<option>1st Year</option>
-														<option>2nd Year</option>
-														<option>3rd Year</option>
-														<option>4th Year</option>
-														
-													</select>
-											</div>
 												<br/>					
 											 	 <center><button name = "save" type="submit">Create My Account</button></center>
                                             <div class="link">
 												<div>
-													<a href="user_registration.php">user registration</a> 
+													<a href="index.php">voter registration</a> 
 												</div>
 											 	 
 											</div>
@@ -82,7 +63,7 @@
 										</form>
 								
 							<?php //PHP script to insert signup data into database
-								require 'signUpData.php';
+								require 'signUpData_user.php';
 								
 							?>
 
@@ -105,4 +86,3 @@
 </body>
 
 </html>
-

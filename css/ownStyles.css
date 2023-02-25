@@ -199,6 +199,7 @@ button:hover{
 .panel-body
 label{
     color: var(--color);
+    font-style: normal !important;
 }
 
 .col-md-4{
@@ -214,4 +215,28 @@ label{
 
 .thead tr{
     background-color: var(--color) !important;
+}
+
+.link{
+    font-style: normal !important;
+    font-family: var(--ff);
+    font-weight: 600;
+    font-size: 1.6rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.link
+a{
+    display: inline-block;
+    color: rgb(255, 255, 255) !important;
+    text-align: center;
+    background-color: var(--color);
+    border-radius: .8rem;
+    padding: 1.2rem 1.8rem;
+    width: 100%;
+}
+.form-body
+button{
+    width: 100% !important;
+    font-family: var(--ff);
 }
