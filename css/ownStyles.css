@@ -4,6 +4,11 @@
     --color: #658864;
     --ff: 'Montserrat', sans-serif;
     --color2: #B7B78A;
+    --color3: #EEEEEE;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color3);
 }
 nav{
     padding: 0 5vw;
@@ -34,4 +39,168 @@ nav a{
     display: block !important;
     padding: 3rem 2rem !important;
     height: 100%;
+    color: white !important;
+    transition: color 300ms ease-in-out;
+}
+nav a:hover{
+    color: rgb(58, 58, 58) !important;
+}
+.main-body{
+    min-height: 80vh;
+    max-height: fit-content;
+    padding-block-start: 1rem;
+    padding-block-end: 3rem;
+    background-color: var(--color3);
+}
+.first-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.first-container div{
+    transform: translateY(1rem);
+}
+.first-image-container{
+    width: 100%;
+    height: 75vh;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.un-text{
+    display: flex;
+    align-items: center;
+    font-size: 6rem;
+    font-family: var(--ff);
+    font-weight: 800;
+    padding: 4rem;
+    line-height: normal;
+}
+.first-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    --ip: 2rem;
+    padding: var(--ip);
+    transform: translate(calc(var(--ip) * 1.2), -4rem);
+}
+
+
+.second-container{
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+}
+.second-image-container{
+    width: 100%;
+    height: 75vh;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.second-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    --ip: 8rem;
+    padding: var(--ip);
+    transform: translateX(calc(var(--ip) * -.5));
+}
+.ex-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: var(--ff);
+    font-weight: 600;
+    padding: 4rem;
+    line-height: normal;
+}
+h{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-block-end: 1rem;
+}
+
+footer{
+    font-family: var(--ff);
+    background-color: var(--color) !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+}
+.footer-first-line{
+    padding: 3rem;
+    border-bottom: 1px solid var(--color2);
+}
+.footer-second-div{
+    padding-block-start: 3rem;
+}
+.footer-second-div div{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: var(--color2);
+    border-radius: 1rem;
+}
+.footer-third-div{
+    padding: 3rem;
+}
+footer a{
+    color: rgb(1, 1, 201);
+}
+
+
+#page-wrapper{
+    padding-block: 3rem !important;
+}
+.form-heading{
+    background-color: var(--color);
+}
+.form-body 
+label{
+    color: var(--color);
+}
+.form-body
+button:hover{
+    background-color: var(--color);
+}
+
+
+
+.index-form
+button{
+    background-color: var(--color);
+    width: 100%;
+    transition: background-color 200ms ease-in-out;
+}
+.index-form
+button:hover{
+    background-color: #536f52;
+}
+
+
+.panel-body
+button{
+    background-color: var(--color);
+    transition: background-color 200ms ease-in-out;
+}
+.panel-body
+button:hover{
+    background-color: #536f52;
+}
+.panel-body
+label{
+    color: var(--color);
+}
+
+.col-md-4{
+    margin:0  25% !important;
+}
+
+
+.container{
+    padding-block: 3rem !important;
+    margin: 0 !important;
+}
+
+
+.thead tr{
+    background-color: var(--color) !important;
 }

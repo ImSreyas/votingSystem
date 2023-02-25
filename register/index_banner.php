@@ -1,17 +1,29 @@
+<style type="text/css">
+nav ul li{
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+nav ul li:hover{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 
-            <div class="side-bar" 
-            style="background-color:rgba(0, 100, 0, 1); font-size:25px; text-align:center; margin-top:-10px; padding-top:20px;">
 
-                <a href="#" style="color:white; font-weight:bold; font-size:30px;">2019 Student Union Elections Registeration</a>
-                </a>
-        <nav class="nav-menue">
-            <ul>
-                <li>
-                    <a href="../index.php">Home</a>
-                </li>
-                <li><a href="../view.php">Candidates</a></li>
-                <li><a href="../unilusu.php">UNILUSU</a></li>
-                <li><a href="../voters.php">Voter List</a></li>
-            </ul>
-        </nav>
+</style>              
+<nav class="nav-menu">
+    <div class="main-header">students union election</div>
+    <div>
+        <ul>
+            <li><a href="../index.php">Home</a>                </li>
+            <li><a href="../candidate_path.php">Candidates</a></li>
+            <li><a href="../unilusu.php">UNILUSU</a></li>
+            <li> <a href="index.php">Register</a></li>
+            <li><a href="../voters.php">Voter List</a></li>
+            <li><a href="../login.php">Login</a></li>
+        </ul>
     </div>
+</nav>		
+</div>

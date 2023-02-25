@@ -26,5 +26,11 @@
     <!-- Custom Fonts -->
     <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/MyStyles.css">
-
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      *{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+      }
+    </style> 
 </head>

@@ -1,6 +1,6 @@
 <?php include ('head.php');?>
 <body>
-    <?php include ('index_banner.php');?>
+    <?php include ('View_banner.php');?>
 
     <div class="container">
         <div class="row">

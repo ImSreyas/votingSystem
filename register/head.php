@@ -36,6 +36,7 @@ Online Voting System
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+    <!-- own styles  -->
+    <link href="../css/ownStyles.css" rel="stylesheet" type="text/css">
 
 </head>

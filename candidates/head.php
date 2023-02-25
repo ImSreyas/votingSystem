@@ -31,7 +31,7 @@ Profession: BSc. Information Systems Technology
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+    <link rel="stylesheet" type="text/css" href="../css/ownStyles.css">
 	
 </head
 <?php
