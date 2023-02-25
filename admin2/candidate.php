@@ -72,16 +72,12 @@
                                             
                                             <td style="text-align:center">
 											
-												 <a rel="tooltip"  title="Delete" id="<?php echo $candidate_id; ?>" href="#delete_user<?php echo $candidate_id; ?>" data-target="#delete_user<?php echo $candidate_id?>" data-toggle="modal"class="btn btn-danger btn-outline"><i class="fa fa-trash-o"></i> Delete</a>	
+												 <a rel="tooltip" style="width: 100%; margin-block-end: .5rem"  title="Delete" id="<?php echo $candidate_id; ?>" href="#delete_user<?php echo $candidate_id; ?>" data-target="#delete_user<?php echo $candidate_id?>" data-toggle="modal"class="btn btn-danger btn-outline"><i class="fa fa-trash-o"></i> Delete</a>	
 											 <?php include ('delete_candidate_modal.php'); ?>
-												  <a rel="tooltip"  title="Edit" id="<?php echo $row['candidate_id'] ?>" href="#edit_candidate<?php echo $row['candidate_id'] ?>"  data-toggle="modal"class="btn btn-success btn-outline"><i class="fa fa-pencil"></i> Edit</a>	
+												  <a rel="tooltip" style="width: 100%" title="Edit" id="<?php echo $row['candidate_id'] ?>" href="#edit_candidate<?php echo $row['candidate_id'] ?>"  data-toggle="modal"class="btn btn-success btn-outline"><i class="fa fa-pencil"></i> Edit</a>	
 												
-											</td>
-														
-											    <?php 
-													
-													require 'edit_candidate_modal.php';
-												?>
+											</td>		
+											    <?php require 'edit_candidate_modal.php'; ?>
                                         </tr>
 										
                                        <?php } ?>

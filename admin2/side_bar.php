@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0; background-color:#0022ff;">
             <div class="navbar-header">
-                <a class="navbar-brand" href="" style = "color:white;"><i class = "fa fa-home fa-large" > </i>HOME | Admin Portal</a>
+                <a class="navbar-brand" href="" style = "color:white;"><i class = "fa fa-home fa-large" > </i>HOME | User Portal</a>
 				
             </div>
       
@@ -8,7 +8,7 @@
             <ul class="nav navbar-top-links navbar-right">
             
                <?php require 'dbcon.php';
-				$query = $conn->query("SELECT * from users where user_id ='$session_id'")or die (mysql_error ());
+				$query = $conn->query("SELECT * from users where user_id ='$session_id'")or die(mysql_error());
 				
 				while ($row = $query->fetch_array()){
 				

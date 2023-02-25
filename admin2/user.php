@@ -61,9 +61,7 @@
                                             <td><?php echo $row ['lastname'];?></td>
                                             <td><?php echo $row ['Phone']; ?></td>
                                             <td><?php echo $row ['email']; ?></td>
-                                            
                                         </tr>
-										
                                        <?php } ?>
                                     </tbody>
                                 </table>

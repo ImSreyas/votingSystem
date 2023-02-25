@@ -65,7 +65,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -94,7 +94,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -122,7 +122,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -150,7 +150,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -177,7 +177,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -204,7 +204,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -233,7 +233,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -261,7 +261,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -289,7 +289,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -317,7 +317,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>
@@ -348,7 +348,7 @@
 		while($fetch = $query->fetch_array())
 		{
 			$id = $fetch['candidate_id'];
-			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
+			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
 			
 	?>

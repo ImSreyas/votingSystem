@@ -26,9 +26,7 @@
 				<a href="unvoted.php" class = "btn btn-danger btn-outline"><i class = "fa fa-paw"></i> Unvoted(<?php echo $count2['total']?>) </a><p><br clear = all><p/>
                 <a href=" " class = "btn btn-danger btn-outline"><i class = "fa fa-paw"></i> Males(<?php echo $count3['total']?>)</a> 
                 <a href=" " class = "btn btn-danger btn-outline"><i class = "fa fa-paw"></i> Females(<?php echo $count4['total']?>)</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <a href="voters_excel.php"><button type="button" style = "margin-right:14px;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i>Export Voters to Excel</button></a>
-                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
+                
                 <a  href = "activate_accounts.php"class = "btn btn-danger btn-outline pull-right" style = "margin-right:12px;" name = "go"><i>Activate Voter Accounts</i> </a>
 				<a  href = "deactivate_accounts.php"class = "btn btn-danger btn-outline pull-right" style = "margin-right:12px;" name = "go"><i>Deactivate Voter Accounts</i> </a>
 				<br />
@@ -60,7 +58,6 @@
                                             <th>Account</th>
                                             <th>Status</th>
                                             <th>Date Registered</th>
-                                            <th>ban</th>
                                             
                                             
                                         </tr>
@@ -73,20 +70,18 @@
                                             while($row1 = $query->fetch_array()){
                                             $voters_id=$row1['voters_id'];
                                         ?>
-                                            <tr style="color: <?php if($row1['banned'] == 0) echo 'green'; else echo 'red' ?>">
+                                      
+                                            <tr >
                                                 <td><?php echo $row1 ['id_number'];?></td>
                                                 <td><?php echo $row1 ['firstname']." ". $row1 ['lastname'];?></td>
                                                 <td><?php echo $row1 ['gender'];?></td>
                                                 <td><?php echo $row1['prog_study'];?></td>
                                                 <td><?php echo $row1 ['year_level'];?></td>
-                                                <td style="color:<?php if($row1['account'] == 'Inactive') echo 'orange'?>"><?php echo $row1 ['account'];?></td>
-                                                <td style="color:<?php if($row1['status'] == 'Unvoted') echo 'blue'?>"><?php echo $row1 ['status'];?></td>
-                                                <td><?php echo $row1 ['date'];?></td>   
-                                                <td style="text-align:center">
-											
-                                                    <a rel="tooltip" style="width:100%;margin-block-end:.5rem;"  title="Ban" id="<?php echo $voters_id ?>" href="ban_voter.php?voter_id=<?php echo $voters_id; ?>" data-toggle="modal" class="btn <?php if($row1['banned'] == 0) echo 'btn-danger'; else echo 'btn-success' ?> btn-outline"><?php if($row1['banned'] == 0) echo 'ban'; else echo 'unban' ?></a>	            
-                                                </td>	    
+                                                <td style="color:<?php if($row1['account'] == 'Inactive') echo 'red'?>"><?php echo $row1 ['account'];?></td>
+                                                <td style="color:<?php if($row1['status'] == 'Unvoted') echo 'red'?>"><?php echo $row1 ['status'];?></td>
+                                                <td><?php echo $row1 ['date'];?></td>       
                                             </tr>
+                                        
 										
                                        <?php } ?>
                                     </tbody>

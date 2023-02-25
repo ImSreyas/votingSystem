@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    --color: #658864;
+    --ff: 'Montserrat', sans-serif;
+    --color2: #B7B78A;
+}
+nav{
+    padding: 0 5vw;
+    background-color: var(--color);
+    font-family: var(--ff);
+    font-weight: 600;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header{
+    font-size: 2rem;
+    font-family: var(--ff);
+    padding: .8rem 2rem;
+    background-color: var(--color2);
+    border-radius: 1rem;
+}
+nav ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+nav li{
+    height: 100%;
+    padding: 0 !important;
+}
+nav a{
+    display: block !important;
+    padding: 3rem 2rem !important;
+    height: 100%;
+}

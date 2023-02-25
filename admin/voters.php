@@ -61,6 +61,7 @@
                                             <th>Account</th>
                                             <th>Status</th>
                                             <th>Date Registered</th>
+                                            <th>ban</th>
                                             
                                             
                                         </tr>
@@ -74,15 +75,18 @@
                                             $voters_id=$row1['voters_id'];
                                         ?>
                                       
-                                            <tr >
+                                            <tr style="color: <?php if($row1['banned'] == 0) echo 'green'; else echo 'red' ?>">
                                                 <td><?php echo $row1 ['id_number'];?></td>
                                                 <td><?php echo $row1 ['firstname']." ". $row1 ['lastname'];?></td>
                                                 <td><?php echo $row1 ['gender'];?></td>
                                                 <td><?php echo $row1['prog_study'];?></td>
                                                 <td><?php echo $row1 ['year_level'];?></td>
-                                                <td><?php echo $row1 ['account'];?></td>
-                                                <td><?php echo $row1 ['status'];?></td>
+                                                <td style="color:<?php if($row1['account'] == 'Inactive') echo 'orange'?>"><?php echo $row1 ['account'];?></td>
+                                                <td style="color:<?php if($row1['status'] == 'Unvoted') echo 'blue'?>"><?php echo $row1 ['status'];?></td>
                                                 <td><?php echo $row1 ['date'];?></td>       
+                                                <td style="text-align:center">
+                                                    <a rel="tooltip" style="width:100%;margin-block-end:.5rem;"  title="Ban" id="<?php echo $voters_id ?>" href="ban_voter.php?voter_id=<?php echo $voters_id; ?>" data-toggle="modal" class="btn <?php if($row1['banned'] == 0) echo 'btn-danger'; else echo 'btn-success' ?> btn-outline"><?php if($row1['banned'] == 0) echo 'ban'; else echo 'unban' ?></a>	            
+                                                </td>
                                             </tr>
                                         
 										
