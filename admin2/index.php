@@ -39,7 +39,7 @@
                                 </div>
                              
                               
-                                <button class="btn btn-lg btn-success btn-block " name = "login">Login</a>
+                                <button type="submit" class="btn btn-lg btn-success btn-block " name = "login">Login</a>
 							
 									<?php include ('login_query.php');?>
                         </form>

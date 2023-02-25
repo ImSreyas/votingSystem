@@ -24,15 +24,14 @@
 				else if ($rows > 0)
 					{
 					$conn->query("INSERT INTO  logins(username) VALUES(' $username');") or die($conn->error);//Inserts username for tracking logs..security feature
-						
+						session_start();
+						$_SESSION['id'] = $fetch['user_id'];
 						?>
 						<script type="text/javascript">
-						alert('WelCome!');
-						window.location = 'candidate.php';
-						</script>
-						<?php
-					session_start();
-					$_SESSION['id'] = $fetch['user_id'];
+							alert('WelCome!');
+							window.location = 'candidate.php';
+							</script>
+						<?php						
 			}else{
 				?>
 						<script type="text/javascript">

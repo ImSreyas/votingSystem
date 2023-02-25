@@ -23,14 +23,14 @@
 					} 
 				else if ($rows > 0)
 					{
+					session_start();
+					$_SESSION['id'] = $fetch['user_id'];
 						?>
 						<script type="text/javascript">
 						alert('WelCome!');
 						window.location = 'candidate.php';
 						</script>
 						<?php
-					session_start();
-					$_SESSION['id'] = $fetch['user_id'];
 			}else{
 				?>
 						<script type="text/javascript">
