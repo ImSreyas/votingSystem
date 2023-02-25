@@ -11,7 +11,7 @@
                     <a href="index.php">Home</a>
                 </li>
                 <li><a href="view.php">Candidates</a></li>
-                <li><a href="unilusuphp">UNILUSU</a></li>
+                <li><a href="unilusuphp">MGU</a></li>
                 <li><a href="voters.php">Voter List</a></li>
             </ul>
         </nav>

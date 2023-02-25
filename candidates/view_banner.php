@@ -19,7 +19,7 @@ a:hover{
         <ul>
             <li><a href="../index.php">Home</a>                </li>
             <li><a href="../candidate_path.php">Candidates</a></li>
-            <li><a href="../unilusu.php">UNILUSU</a></li>
+            <li><a href="../unilusu.php">MGU</a></li>
             <li> <a href="../register/index.php">Register</a></li>
             <li><a href="../voters.php">Voter List</a></li>
             <li><a href="../login.php">Login</a></li>

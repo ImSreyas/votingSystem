@@ -1,4 +1,4 @@
-<div class="modal fade" id="delete_admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="delete_admin<?php echo $row['user_id']?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -13,7 +13,7 @@
 			
 			
 			<div class="modal-body">
-			Are you sure you want to delete this User Data ? 
+			Are you sure you want to delete this User Data ? <?php echo $row['user_id']?>
 		</div>
 		
 		<div class="modal-footer">

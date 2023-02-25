@@ -67,7 +67,7 @@
                                             <td><?php echo $row ['email']; ?></td>
                                             <td style="text-align:center">
 											
-												 <a rel="tooltip"  title="Delete" id="<?php echo $user_id ?>" href="#delete_admin<?php echo $user_id; ?>" data-target="#delete_admin" data-toggle="modal"class="btn btn-danger btn-outline"><i class="fa fa-trash-o"></i> Delete</a>	
+												 <a rel="tooltip"  title="Delete" id="<?php echo $row['user_id'] ?>" href="#delete_admin<?php echo $row['user_id']; ?>" data-target="#delete_admin" data-toggle="modal"class="btn btn-danger btn-outline"><i class="fa fa-trash-o"></i> Delete</a>	
 											 <?php include ('delete_user_modal.php'); ?>
 												  <a rel="tooltip"  title="Edit" id="<?php echo $row['user_id'] ?>" href="#edit_user<?php echo $row['user_id'] ?>"  data-toggle="modal"class="btn btn-success btn-outline"><i class="fa fa-pencil"></i> Edit</a>	
 		

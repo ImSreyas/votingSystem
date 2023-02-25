@@ -59,7 +59,7 @@ nav a:hover{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vw * 6 / 16);
+    height: calc(100vw * 6.5 / 16);
 }
 .first-container div{
     transform: translateY(1rem);
@@ -239,4 +239,34 @@ a{
 button{
     width: 100% !important;
     font-family: var(--ff);
+}
+
+
+
+.mgu-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: calc(100vw * 7 / 16) !important;
+    background-image: url('../img/blob-scene-haikei (1).svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+}
+.mgu-main-container
+.first-image{
+    transform: translateX(-5rem);
+}
+.mgu{
+    font-family: var(--ff);
+    font-weight: 800;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 8rem;
+    padding-inline-end: 3rem;
+    /* padding-block: 10rem; */
+    line-height: normal;
+    transform: translateX(3vw);
 }
