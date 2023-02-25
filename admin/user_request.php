@@ -16,16 +16,13 @@
                     <h3 class="page-header">System User List</h3>
 					
                 </div>
-				
-				<button class="btn btn-success" data-toggle="modal" data-target="#add_user">Add User</button>
-				<?php include ('add_user_modal.php');?>
                 <!-- /.col-lg-12 -->
 			
 				
 				<hr/>
 				
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <!-- <div class="panel-heading">
                             <h4 class="modal-title" id="myModalLabel">         
 												<div class="panel panel-primary">
 													<div class="panel-heading">
@@ -33,7 +30,7 @@
 													</div>    
 												</div>
 											</h4>
-                        </div>
+                        </div> -->
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -55,7 +52,7 @@
 										<?php 
 										require 'dbcon.php';
 										$bool = false;
-										$query = $conn->query("SELECT * FROM users ORDER BY user_id DESC");
+										$query = $conn->query("SELECT * FROM users WHERE accepted='0' ORDER BY user_id DESC");
 										while($row = $query->fetch_array()){
 										$user_id=$row['user_id'];
 										?>
@@ -66,13 +63,9 @@
                                             <td><?php echo $row ['Phone']; ?></td>
                                             <td><?php echo $row ['email']; ?></td>
                                             <td style="text-align:center">
-											
-												 <a rel="tooltip"  title="Delete" id="<?php echo $user_id ?>" href="#delete_admin<?php echo $user_id; ?>" data-target="#delete_admin" data-toggle="modal"class="btn btn-danger btn-outline"><i class="fa fa-trash-o"></i> Delete</a>	
-											 <?php include ('delete_user_modal.php'); ?>
-												  <a rel="tooltip"  title="Edit" id="<?php echo $row['user_id'] ?>" href="#edit_user<?php echo $row['user_id'] ?>"  data-toggle="modal"class="btn btn-success btn-outline"><i class="fa fa-pencil"></i> Edit</a>	
-		
+												<a rel="tooltip"  title="Accept" id="<?php echo $user_id ?>" href="accept_user.php?user_id=<?php echo $user_id; ?>" data-toggle="modal"class="btn btn-success btn-outline">Accept</a>	
+												<a rel="tooltip"  title="Reject" id="<?php echo $row['user_id'] ?>" href="reject_user.php?user_id=<?php echo $user_id ?>"  data-toggle="modal"class="btn btn-danger btn-outline">Reject</a>	
 											</td>
-											    <?php include ('edit_user_modal.php');?>
                                         </tr>
 										
                                        <?php } ?>

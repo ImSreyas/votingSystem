@@ -46,6 +46,9 @@
                             <a href="canvassing.php"><i class="fa fa-download fa-fw"></i>Election Reports</a>
                         </li>
                         <li>
+                            <a href="user_request.php"> <i class = "fa fa-users" ></i> User Request</a>
+                        </li>
+                        <li>
                             <a href="user.php"> <i class = "fa fa-users" ></i> View User</a>
                         </li>
                         <li>
