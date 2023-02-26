@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
-    --color: #658864;
+    --color: #439A97;
+    --dark: #387d7b;
     --ff: 'Montserrat', sans-serif;
-    --color2: #B7B78A;
+    --color2: #97DECE;
     --color3: #EEEEEE;
     box-sizing: border-box;
 }
@@ -69,6 +70,16 @@ nav a:hover{
     height: 75vh;
     border-radius: 2rem;
     overflow: hidden;
+    /* --ip: 1rem;
+    padding: var(--ip); */
+}
+.first-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    --ip: 3rem;
+    transform: translate(calc(var(--ip) * 2), calc(var(--ip) * .8));
 }
 .un-text{
     display: flex;
@@ -79,15 +90,7 @@ nav a:hover{
     padding: 4rem;
     line-height: normal;
 }
-.first-image{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    --ip: 3rem;
-    padding: var(--ip);
-    transform: translate(calc(var(--ip) * 1.2), 0);
-}
+
 
 
 .second-container{
@@ -183,7 +186,7 @@ button{
 }
 .index-form
 button:hover{
-    background-color: #536f52;
+    background-color: var(--dark);
 }
 
 
@@ -194,7 +197,7 @@ button{
 }
 .panel-body
 button:hover{
-    background-color: #536f52;
+    background-color: var(--dark);
 }
 .panel-body
 label{
