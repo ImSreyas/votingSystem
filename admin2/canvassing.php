@@ -71,7 +71,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -100,7 +100,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -124,11 +124,10 @@
 			$id = $fetch['candidate_id'];
 			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id' && banned = '0'");
 			$fetch1 = $query1->fetch_assoc();
-			
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -156,7 +155,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -183,7 +182,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -210,7 +209,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -239,7 +238,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -267,7 +266,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -295,7 +294,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -323,7 +322,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>
@@ -354,7 +353,7 @@
 	?>
 					<tbody> 
 						<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-						<td><img src="../admin/<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+						<td><img src="../<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 					<?php }?>
 					</tbody>

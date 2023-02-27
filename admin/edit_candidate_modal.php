@@ -18,7 +18,7 @@
 			
             <div class="modal-body">
 				<form method = "post" enctype = "multipart/form-data">	
-				     <img src= <?php echo $row ['img']?> width="50" height="50" class="img-rounded">
+				     <img src= '../<?php echo $row ['img']?>' width="50" height="50" class="img-rounded">
 					<input type="hidden" name="candidate_id" value="<?php echo $row['candidate_id'] ?>">
 					<div class="form-group">
 						<label>Position</label>
@@ -102,7 +102,7 @@
 			$image= addslashes(file_get_contents($_FILES['image']['tmp_name']));
 			$image_name= addslashes($_FILES['image']['name']);
 			$image_size= getimagesize($_FILES['image']['tmp_name']);
-			move_uploaded_file($_FILES["image"]["tmp_name"],"upload/" . $_FILES["image"]["name"]);			
+			move_uploaded_file($_FILES["image"]["tmp_name"],"../upload/" . $_FILES["image"]["name"]);			
 			$location="upload/" . $_FILES["image"]["name"];
 		
 	

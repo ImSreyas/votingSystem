@@ -63,7 +63,7 @@
 												while($row = $query->fetch_array()){
 													$candidate_id=$row['candidate_id'];
 										?>
-											<td width="50"><img src="<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
+											<td width="50"><img src="../<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
 											<td><?php echo $row ['position'];?></td>
                                             <td><?php echo $row ['party'];?></td>
                                             <td><?php echo $row ['firstname'];?></td>

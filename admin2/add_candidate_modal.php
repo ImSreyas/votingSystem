@@ -95,7 +95,7 @@
 					$image_name= addslashes($_FILES['image']['name']);
 					$image_size= getimagesize($_FILES['image']['tmp_name']);
 		
-					move_uploaded_file($_FILES["image"]["tmp_name"],"upload/" . $_FILES["image"]["name"]);			
+					move_uploaded_file($_FILES["image"]["tmp_name"],"../upload/" . $_FILES["image"]["name"]);			
 					$location="upload/" . $_FILES["image"]["name"];
 					
 					
