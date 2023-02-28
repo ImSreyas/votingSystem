@@ -36,6 +36,9 @@
                          
                         </li>
 						<li>
+                          <a href="voters_request.php"><i class = "fa fa-user fa-fw"></i> Voters request</a>
+                        </li>
+						<li>
                           <a href="voters.php"><i class = "fa fa-user fa-fw"></i> View Voters</a>
                         </li>
                         <li>

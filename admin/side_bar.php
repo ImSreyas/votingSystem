@@ -33,7 +33,9 @@
                         </li>
                         <li>
                             <a href="candidate.php"><i class = "fa fa-user fa-fw"></i> View Candidates</a>
-                         
+                        </li>
+                        <li>
+                            <a href="voters_request.php"> <i class = "fa fa-users" ></i> voters requests</a>
                         </li>
 						<li>
                           <a href="voters.php"><i class = "fa fa-user fa-fw"></i> View Voters</a>
