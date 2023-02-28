@@ -8,8 +8,8 @@
 		$result = $conn->query("SELECT * FROM voters WHERE id_number = '$idno' && password = '".md5($password)."' && `account` = 'active' && `status` = 'Unvoted'") or die(mysqli_errno());
 		$row = $result->fetch_array();
 		$voted = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '".md5($password)."' && `status` = 'Voted'")->num_rows;
+		$request = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '".md5($password)."' && `accepted` = '1'")->num_rows;
 		$numberOfRows = $result->num_rows;				
-		
 		
 		if ($numberOfRows > 0){
 			session_start();
@@ -17,8 +17,14 @@
 			header('location:vote.php');
 		}
 		
-
-		if($voted == 1){
+		
+		if($request == 0){
+			?>
+			<script type="text/javascript">
+			alert('you are under verification. The administrator needs to accept your request.')
+			</script>
+			<?php
+		}else if($voted == 1){
 			?>
 			<script type="text/javascript">
 			alert('Sorry You Already Voted')
