@@ -5,7 +5,12 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include ('side_bar.php');?>
+        <?php
+        if(mysqli_query($conn, "select * from users where user_id='$session_id' and privilege='1'")->num_rows == 0){
+            include ('side_bar.php');
+        } else {
+            include ('privilege_side_bar.php');
+        }?>
 
         <!-- Page Content -->
         <div id="page-wrapper">
