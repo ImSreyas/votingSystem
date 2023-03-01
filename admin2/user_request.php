@@ -13,12 +13,12 @@
 
         <!-- Navigation -->
         <?php
-        if(mysqli_query($conn, "select * from users where user_id='$session_id' and privilege='1'")->num_rows == 0){
-            include ('side_bar.php');
-        } else {
-            include ('privilege_side_bar.php');
-        }
-    ?>
+            if(mysqli_query($conn, "select * from users where user_id='$session_id' and privilege='1'")->num_rows == 0){
+                include ('side_bar.php');
+            } else {
+                include ('privilege_side_bar.php');
+            }
+        ?>
 
         <!-- Page Content -->
         <div id="page-wrapper">
@@ -62,27 +62,38 @@
                                         <tr>
 										<?php 
 										require 'dbcon.php';
-										$bool = false;
-										$query = $conn->query("SELECT * FROM users WHERE accepted='0' ORDER BY user_id DESC");
-										while($row = $query->fetch_array()){
-										$user_id=$row['user_id'];
-										?>
-											
-											<td><?php echo $row ['username'];?></td>
-                                            <td><?php echo $row ['firstname'];?></td>
-                                            <td><?php echo $row ['lastname'];?></td>
-                                            <td><?php echo $row ['Phone']; ?></td>
-                                            <td><?php echo $row ['email']; ?></td>
-                                            <td style="text-align:center">
-												<a rel="tooltip"  title="Accept" id="<?php echo $user_id ?>" href="accept_user.php?user_id=<?php echo $user_id; ?>" data-toggle="modal"class="btn btn-success btn-outline">Accept</a>	
-												<a rel="tooltip"  title="Reject" id="<?php echo $row['user_id'] ?>" href="reject_user.php?user_id=<?php echo $user_id ?>"  data-toggle="modal"class="btn btn-danger btn-outline">Reject</a>	
-											</td>
-                                        </tr>
-										
-                                       <?php } ?>
+										$bool = false; 
+										$query = mysqli_query($conn,"SELECT * FROM users WHERE accepted='0' ORDER BY user_id DESC") or mysqli_error($conn);
+                                        if($query->num_rows != 0){
+                                        
+                                            while($row = $query->fetch_assoc()){
+                                            $user_id=$row['user_id'];
+                                            ?>
+                                                
+                                                <td><?php echo $row ['username'];?></td>
+                                                <td><?php echo $row ['firstname'];?></td>
+                                                <td><?php echo $row ['lastname'];?></td>
+                                                <td><?php echo $row ['Phone']; ?></td>
+                                                <td><?php echo $row ['email']; ?></td>
+                                                <td style="text-align:center">
+                                                    <a rel="tooltip"  title="Accept" id="<?php echo $user_id ?>" href="accept_user.php?user_id=<?php echo $user_id; ?>" data-toggle="modal"class="btn btn-success btn-outline">Accept</a>	
+                                                    <a rel="tooltip"  title="Reject" id="<?php echo $row['user_id'] ?>" href="reject_user.php?user_id=<?php echo $user_id ?>"  data-toggle="modal"class="btn btn-danger btn-outline">Reject</a>	
+                                                </td>
+                                            </tr>  
+                                        <?php
+                                            }
+                                        }
+										 ?>
                                     </tbody>
                                 </table>
                             </div>
+                            <?php 
+                            if(!$query->num_rows != 0){
+                                ?> 
+                                <div style="text-align: center;width:100%;padding: 5rem 2rem; border-radius: 1rem; background-color: #ddd;color: black;font-size: 1.5rem">no user request found yet...!</div>
+                                <?php
+                            }
+                            ?>
                             <!-- /.table-responsive -->
                             
                         </div>
