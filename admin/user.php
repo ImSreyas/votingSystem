@@ -79,7 +79,6 @@
 												 <a rel="tooltip" style="width: 10rem" title="add/remove privilege" id="<?php echo $row['user_id'] ?>" href="add_or_remove_privilege.php?user_id=<?php echo $row['user_id']; ?>" data-toggle="modal"class="btn <?php if($privilege == 0) echo 'btn-success'; else echo 'btn-danger' ?> btn-outline"> <?php if($privilege == 0) echo 'Add'; else echo 'Remove' ?></a>	
 											</td>
                                         </tr>
-										
                                        <?php } ?>
                                     </tbody>
                                 </table>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2023 at 01:38 PM
+-- Generation Time: Mar 01, 2023 at 02:30 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `vote`
 --
+CREATE DATABASE IF NOT EXISTS `vote` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `vote`;
 
 -- --------------------------------------------------------
 
@@ -127,7 +129,9 @@ INSERT INTO `logins` (`user_id`, `username`, `login_time`) VALUES
 (18, ' user', '2023-02-27 12:17:54'),
 (19, ' user', '2023-02-27 22:06:06'),
 (20, ' user', '2023-02-27 23:06:39'),
-(21, ' user', '2023-02-28 14:07:03');
+(21, ' user', '2023-02-28 14:07:03'),
+(22, ' user', '2023-03-01 17:00:08'),
+(23, ' user', '2023-03-01 17:33:41');
 
 -- --------------------------------------------------------
 
@@ -166,15 +170,16 @@ CREATE TABLE `users` (
   `lastname` varchar(100) NOT NULL,
   `Phone` int(11) DEFAULT NULL,
   `email` varchar(100) NOT NULL,
-  `accepted` tinyint(1) NOT NULL DEFAULT 0
+  `accepted` tinyint(1) NOT NULL DEFAULT 0,
+  `privilege` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `password`, `firstname`, `lastname`, `Phone`, `email`, `accepted`) VALUES
-(1, 'user', 'user', 'Kaden', 'Bowen', 2147483647, 'jykypawo@mailinator.com', 1);
+INSERT INTO `users` (`user_id`, `username`, `password`, `firstname`, `lastname`, `Phone`, `email`, `accepted`, `privilege`) VALUES
+(1, 'user', 'user', 'Kaden', 'Bowen', 2147483647, 'jykypawo@mailinator.com', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -331,7 +336,7 @@ ALTER TABLE `candidate`
 -- AUTO_INCREMENT for table `logins`
 --
 ALTER TABLE `logins`
-  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `user`
