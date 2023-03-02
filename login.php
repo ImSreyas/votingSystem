@@ -1,7 +1,9 @@
 <?php include ('head.php');?>
 <body>
     <?php include ('View_banner.php');?>
-
+    <?php 
+    session_start();
+    ?>
     <div class="container">
         <div class="row">
            

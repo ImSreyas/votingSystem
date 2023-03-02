@@ -217,6 +217,7 @@ label{
 .container{
     padding-block: 3rem !important;
     margin: 0 !important;
+    width: 100%;
 }
 
 

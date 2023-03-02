@@ -1,24 +1,25 @@
 <?php
 	require_once 'admin/dbcon.php';
-	
+		
 	if(isset($_POST['login'])){
 		$idno=$_POST['idno'];
 		$password=$_POST['password'];
 	
-		$result = $conn->query("SELECT * FROM voters WHERE id_number = '$idno' && password = '".md5($password)."' && `account` = 'active' && `status` = 'Unvoted'") or die(mysqli_errno());
+		$result = $conn->query("SELECT * FROM voters WHERE id_number = '$idno' && password = '".md5($password)."' && `account` = 'active' && `status` = 'Unvoted' && `accepted`='1'") or die(mysqli_error($conn));
 		$row = $result->fetch_array();
 		$voted = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '".md5($password)."' && `status` = 'Voted'")->num_rows;
 		$request = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '".md5($password)."' && `accepted` = '1'")->num_rows;
 		$numberOfRows = $result->num_rows;				
 		
 		if ($numberOfRows > 0){
-			session_start();
 			$_SESSION['voters_id'] = $row['voters_id'];
-			header('location:vote.php');
-		}
-		
-		
-		if($request == 0){
+			?>
+			<script>
+				window.location.href = 'vote.php'
+			</script>
+			<?php
+		}	
+		else if($request == 0){
 			?>
 			<script type="text/javascript">
 			alert('you are under verification. The administrator needs to accept your request.')

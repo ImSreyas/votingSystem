@@ -23,10 +23,6 @@
                     </div>
                     <div class="panel-body">
                         <form role="form" method = "post" enctype = "multipart/form-data">
-                                <div class="form-group">
-                                    <label for = "username" >Login ID</label>
-                                        <input class="form-control" placeholder="Enter Login ID" name="login_id" type="text" autofocus>
-                                </div>
 							
                                 <div class="form-group">
 									<label for = "username" >Username</label>
@@ -39,8 +35,10 @@
                                 </div>
                              
                               
-                                <button type="submit" class="btn btn-lg btn-success btn-block " name = "login">Login</a>
-							
+                                <button type="submit" style="margin-bottom: 1.5rem" class="btn btn-lg btn-success btn-block " name = "login">Login</button>
+                                <a href="../register/user_registration.php" style="color: white; width: 100%;display: block;padding: 1rem;background-color: #439A97;text-align: center;border-radius: .5rem; font-size: 1.6rem">
+                                Register
+                                </a>
 									<?php include ('login_query.php');?>
                         </form>
                     </div>

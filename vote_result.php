@@ -112,7 +112,7 @@
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[pres_id]'")->fetch_array();
 						
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			</div>
@@ -127,7 +127,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[vp_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			</div>
@@ -142,7 +142,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[ua_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 				
@@ -158,7 +158,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[ss_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			
@@ -175,7 +175,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[ea_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			
@@ -191,7 +191,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[treasurer_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			
@@ -207,7 +207,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[sg_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			</div>
@@ -222,7 +222,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[vtr_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 				
@@ -238,7 +238,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[tas_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			
@@ -254,7 +254,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[ps_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			
@@ -270,7 +270,7 @@
 				else
 					{
 						$fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[as_id]'")->fetch_array();
-						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = 'admin/".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
+						echo $fetch['firstname']." ".$fetch['lastname']." "."<img src = '".$fetch['img']."' style = 'height:80px; width:80px; border-radius:500px;' />"; 
 					}
 			?>
 			

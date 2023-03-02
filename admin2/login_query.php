@@ -5,15 +5,14 @@
 	{
 		$username=$_POST['username'];
 		$password=$_POST['password'];
-		$login_id = $_POST['login_id'];
 	
 		
-		$query = $conn->query("SELECT * FROM users WHERE username = 	'$username' AND password = '$password' AND user_id = '$login_id' AND accepted='1' ") or die($conn->error);
+		$query = $conn->query("SELECT * FROM users WHERE username = 	'$username' AND password = '$password' AND accepted='1' ") or die($conn->error);
 		$rows = $query->num_rows;
 		$fetch = $query->fetch_array();
 																		
 			if ($rows == 0){
-				$query = $conn->query("SELECT * FROM users WHERE username = 	'$username' AND password = '$password' AND user_id = '$login_id' AND accepted='0' ") or die($conn->error);
+				$query = $conn->query("SELECT * FROM users WHERE username = 	'$username' AND password = '$password' AND accepted='0' ") or die($conn->error);
 				$rows = $query->num_rows;
 				if($rows > 0){
 					?> 

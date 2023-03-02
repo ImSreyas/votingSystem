@@ -33,7 +33,8 @@
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
      <?php
-            if($query->num_rows != 0){
+            if(isset($query)){
+              if($query->num_rows != 0){
               ?>
                 <script>
                 $(document).ready(function() {
@@ -41,6 +42,7 @@
                 });
                 </script>
               <?php
+            }
             }
         ?>
         
